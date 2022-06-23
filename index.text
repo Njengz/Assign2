@@ -1,0 +1,154 @@
+122174
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   style.css
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/MARIA/Desktop/My_Task App/.git/
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git commit -m "Successfully commited"
+[master (root-commit) c568f59] Successfully commited
+ 3 files changed, 288 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index.js
+ create mode 100644 style.css
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ remote
+bash: remote: command not found
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ remote origin https://github.com/wangoimwangi/My-_Task-App.git
+bash: remote: command not found
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git remote origin https://github.com/wangoimwangi/My-_Task-App.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git remote add origin https://github.com/wangoimwangi/My-_Task-App.git
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git branch Login
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git checkout Login
+Switched to branch 'Login'
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (Login)
+$ git merge Login
+Already up to date.
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (Login)
+$ git checkout master
+Switched to branch 'master'
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git remote
+origin
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git remote add origin https://github.com/wangoimwangi/My-_Task-App.git
+error: remote origin already exists.
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git push --set-upstream origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.80 KiB | 2.80 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wangoimwangi/My-_Task-App.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git push
+Everything up-to-date
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ touch index.text
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git add index.text
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.text
+
+
+MARIA@LAPTOP-JGMSB4OE MINGW64 ~/Desktop/My_Task App (master)
+$
